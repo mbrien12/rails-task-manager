@@ -1,4 +1,7 @@
 <h1><%= @task.name.upcase %></h1>
 <h2>I need to...<%= @task.description %></h2>
 <h3>Done? <%= @task.done %></h3>
+<p>Created at <%= @task.created_at %></p>
 
+
+<%= link_to "Edit this task", edit_task_path %>

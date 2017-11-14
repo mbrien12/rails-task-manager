@@ -11,11 +11,12 @@
   <td><%= task.name %></td>
   <td><%= task.description %></td>
   <td><%= task.done %></td>
-  <td><%= link_to "See more", task_path(:id => task.id) %></td>
+  <td><%= link_to "See more", task_path(task.id) %></td>
 </tr>
 <% end %>
 </table>
 
 <p>Plus delete option - remember to add 'method' in link</p>
-<p>Plus link to create new task</p>
+
+<%= link_to 'Create new task', new_task_path %>
 
