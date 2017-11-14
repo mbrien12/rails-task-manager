@@ -11,6 +11,7 @@
   <td><%= task.name %></td>
   <td><%= task.description %></td>
   <td><%= task.done %></td>
+  <td><%= link_to "See more", task_path(:id => task.id) %></td>
 </tr>
 <% end %>
 </table>
