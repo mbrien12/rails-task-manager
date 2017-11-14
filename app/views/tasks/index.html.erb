@@ -1,2 +1,20 @@
-<h1>Tasks#index</h1>
-<p>Find me in app/views/tasks/index.html.erb</p>
+<h1>TASKS HOME</h1>
+<p>Display a list of all tasks with a link to full page (show view) and option to edit</p>
+<table>
+<tr>
+  <th>Task title</th>
+  <th>Description</th>
+  <th>Done?</th>
+</tr>
+<% @tasks.each do |task| %>
+<tr>
+  <td><%= task.name %></td>
+  <td><%= task.description %></td>
+  <td><%= task.done %></td>
+</tr>
+<% end %>
+</table>
+
+<p>Plus delete option - remember to add 'method' in link</p>
+<p>Plus link to create new task</p>
+
