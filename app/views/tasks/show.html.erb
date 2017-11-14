@@ -5,3 +5,9 @@
 
 
 <%= link_to "Edit this task", edit_task_path %>
+<br>
+<%= link_to 'See all tasks', tasks_path %>
+<br>
+<%= link_to "Delete", task_path(@task),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
